@@ -1,3 +1,6 @@
+:root {
+    --accent-color: #2196F3; 
+}
 body {
     letter-spacing: 0.03em;
     font-family: 'Roboto', sans-serif;
@@ -32,7 +35,7 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196F3; 
+    color: var(--accent-color); 
 }
 .ligotip {
     font-family: 'Raleway';
@@ -50,11 +53,11 @@ ul {
     letter-spacing: 0.02em;
  }
  .navilink a.current {
-    color: #2196F3;
+    color: var(--accent-color); 
 }
  .navilink a:hover,
  .navilink a:focus{
-     color: #2196F3; 
+    color: var(--accent-color); 
  }
  .mail-info {
     color: #757575;
@@ -66,7 +69,7 @@ ul {
 }
 .mail-info:hover,
 .mail-info:focus {
-    color: #2196F3; 
+    color: var(--accent-color); 
 }
 .tel-info{
     color: #757575;
@@ -78,7 +81,7 @@ ul {
 }
 .tel-info:hover,
 .tel-info:focus {
-    color: #2196F3;
+    color: var(--accent-color); 
 }
  .title {
     background-color:#2F303A ;
@@ -161,7 +164,7 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196F3; 
+    color: var(--accent-color); 
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -172,7 +175,7 @@ ul {
 }
 .footercontact a:hover,
 .footercontact a:focus {
-    color: #2196F3;
+    color: var(--accent-color); 
 }
 .maps-footer {
     font-style: normal;
@@ -204,7 +207,7 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196F3;
+    color: var(--accent-color); 
 }
 .portfolio-logo {
     font-family: 'Raleway';
@@ -221,11 +224,11 @@ ul {
     color: #212121;
 }
 .portfolio-navigation a.current{
-    color: #2196F3;
+    color: var(--accent-color); 
 }
 .portfolio-navigation a:hover,
 .portfolio-navigation a:focus {
-    color: #2196F3;
+    color: var(--accent-color); 
 }   
 .potfolio-contacts a {
     font-weight: 500;
@@ -236,7 +239,7 @@ ul {
 }
 .potfolio-contacts a:hover,
 .potfolio-contacts a:focus{
-    color: #2196F3; 
+    color: var(--accent-color); 
 }
 .portfolio-button button:hover,
 .portfolio-button button:focus {
@@ -268,7 +271,7 @@ ul {
 }
 .portfolio-address a:hover,
 .portfolio-address a:focus{
-    color: #2196F3;
+    color: var(--accent-color); 
 }
 .portfolio-footer{
     background: #2F303A;
@@ -278,7 +281,7 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color:#2196F3;
+    color: var(--accent-color); 
 }
 .portfolio-footer-map{
     font-style: normal;
