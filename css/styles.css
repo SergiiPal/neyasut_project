@@ -57,6 +57,7 @@ ol {
   background: var(--primary-bg-color);
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .visually-hidden {
   position: absolute;
@@ -144,11 +145,12 @@ ol {
   background: var(--secondary-bg-color-dark);
   width: 1630px;
   height: 600px;
+  padding: 200px 0 200px 0;
+  margin: 0 auto 0 auto;
 }
 .title-text {
-  padding-left: 452px;
-  padding-top: 61px;
-  padding-right: 452px;
+  width: 700px;
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -158,8 +160,8 @@ ol {
   color: var(--primary-text-color);
 }
 .button-studio {
-  margin-left: 692px;
-  margin-top: 30px;
+  margin: 30px auto;
+  display: block;
   width: 216px;
   height: 50px;
   font-weight: 700;
@@ -170,6 +172,7 @@ ol {
   color: var(--primary-text-color);
   letter-spacing: 0.06em;
   border-radius: 4px;
+  border: none;
 }
 .button-studio:hover,
 .button-studio:focus {
@@ -180,6 +183,12 @@ ol {
 /*-------------------------  /TITLE  -------------------------*/
 
 /*-------------------------  VISUALLY  -------------------------*/
+.hidden {
+  padding: 94px 0 94px 0;
+}
+.characteristic-point {
+  width: 270px;
+}
 .section-ourfeatures {
   background: var(--primary-bg-color);
 }
@@ -189,7 +198,6 @@ ol {
   justify-content: space-between;
 }
 .our-features .characteristic {
-  margin-top: 94px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -197,14 +205,13 @@ ol {
   color: var(--secondary-text-color);
 }
 .our-features .point {
-  padding-top: 10px;
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--tertiary-text-color);
 }
 .resume-title {
   margin-bottom: 50px;
-  margin-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -219,7 +226,6 @@ ol {
 
 /*-------------------------  TEAM  -------------------------*/
 .team-title {
-  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -228,15 +234,15 @@ ol {
 }
 .team {
   background: var(--secondary-bg-color);
-  margin-top: 94px;
   width: 1630px;
   height: 648px;
+  padding: 94px 0 94px 0;
+  margin: 0 auto;
 }
 .team-list {
   display: flex;
   column-gap: 30px;
   margin-top: 50px;
-  margin-left: 215px;
 }
 .team-list .team-member {
   background: var(--primary-bg-color);
@@ -244,8 +250,10 @@ ol {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.participant-speciality {
+  padding: 30px;
+}
 .team-list .participant-name {
-  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -253,7 +261,7 @@ ol {
   color: var(--secondary-text-color);
 }
 .team-list .specialty {
-  padding: 10px 0 30px 0;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -283,14 +291,16 @@ ol {
   line-height: 1.19;
   color: var(--primary-text-color);
   text-decoration: none;
-  padding: 60px 0 20px 0;
 }
 .footercontact a:hover,
 .footercontact a:focus {
   color: var(--accent-color);
 }
+.contact-studio {
+  margin-top: 20px;
+}
 .maps-footer {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
@@ -303,7 +313,7 @@ ol {
   font-size: 14px;
   line-height: 1.71;
   color: var(--contact-footer-color);
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .telinfo-footer {
   font-style: normal;
@@ -389,6 +399,9 @@ ol {
 }
 /* ==========================/PORTFOLIO HEADER =========================*/
 /* =========================== PORTFOLIO BUTTON ======================== */
+.portfolio {
+  padding: 94px 0 94px 0;
+}
 .portfolio-button {
   display: flex;
   margin: 94px 0 50px 0;
@@ -402,9 +415,10 @@ ol {
   background-color: var(--button-background);
   cursor: pointer;
   color: var(--primary-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-button button {
-  padding: 6px 22px 6px 22px;
   background: var(--secondary-bg-color);
   font-family: inherit;
   font-weight: 500;
@@ -412,17 +426,20 @@ ol {
   line-height: 1.62;
   text-align: center;
   color: var(--secondary-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  padding: 6px 22px 6px 22px;
+  border: none;
   border-radius: 4px;
 }
 /* =========================== /PORTFOLIO BUTTON ======================== */
 /* =========================== PORTFOLIO IMAGES =========================*/
+.chapter-group {
+  padding: 20px 24px;
+}
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 34px 0 94px 0;
+  margin-bottom: 94px;
 }
 .portfolio-box {
   box-sizing: border-box;
@@ -435,9 +452,6 @@ ol {
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
-.portfolio-chapter {
-  padding: 20px 24px 0 24px;
-}
 .portfolio-img .portfolio-group {
   font-weight: 400;
   font-size: 16px;
@@ -445,7 +459,7 @@ ol {
   color: var(--tertiary-text-color);
 }
 .portfolio-group {
-  padding: 4px 24px 20px 24px;
+  margin-top: 4px;
 }
 /* =========================== /PORTFOLIO IMAGES =========================*/
 /* ============================ PORTFOLIO FOOTER ========================= */
@@ -474,21 +488,23 @@ ol {
   line-height: 1.19;
   color: var(--primary-text-color);
   text-decoration: none;
-  padding: 60px 0 20px 0;
+}
+.portfolio-address {
+  margin-top: 20px;
 }
 .portfolio-footer-map {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .portfolio-footer-mail {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--contact-footer-color);
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .portfolio-footer-tel {
   font-style: normal;
