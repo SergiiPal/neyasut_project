@@ -114,6 +114,12 @@ ol {
   column-gap: 50px;
   display: flex;
 }
+.mail-logo {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
 .mail-info {
   color: var(--tertiary-text-color);
   font-weight: 500;
@@ -126,6 +132,14 @@ ol {
 .mail-info:focus {
   color: var(--accent-color);
 }
+.tel-logo {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+/* .tel-logo:hover {
+  color: #2196f3;
+} */
 .tel-info {
   color: var(--tertiary-text-color);
   text-decoration: none;
@@ -142,12 +156,19 @@ ol {
 
 /*-------------------------  TITLE  -------------------------*/
 .title {
-  background: var(--secondary-bg-color-dark);
+  background: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/bg.jpg);
+  background-size: cover;
   width: 1630px;
   height: 600px;
   padding: 200px 0 200px 0;
   margin: 0 auto 0 auto;
 }
+
 .title-text {
   width: 700px;
   margin: 0 auto;
@@ -160,7 +181,7 @@ ol {
   color: var(--primary-text-color);
 }
 .button-studio {
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
   display: block;
   width: 216px;
   height: 50px;
@@ -188,6 +209,20 @@ ol {
 }
 .characteristic-point {
   width: 270px;
+}
+.our-features-icon {
+  width: 70px;
+  height: 70px;
+}
+.icon-bg {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .section-ourfeatures {
   background: var(--primary-bg-color);
@@ -221,6 +256,7 @@ ol {
 .resume {
   display: flex;
   column-gap: 30px;
+  padding-bottom: 94px;
 }
 /*-------------------------  /VISUALLY  -------------------------*/
 
@@ -243,6 +279,17 @@ ol {
   display: flex;
   column-gap: 30px;
   margin-top: 50px;
+}
+.social-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  column-gap: 10px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
 }
 .team-list .team-member {
   background: var(--primary-bg-color);
@@ -267,7 +314,59 @@ ol {
   text-align: center;
   color: var(--tertiary-text-color);
 }
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+/* .social-icon:hover {
+  color: var(--primary-text-color: #ffffff;);
+} */
+.social-link:hover,
+.social-link:focus {
+  background: var(--button-background-hover);
+  color: var(--primary-text-color);
+}
 /*-------------------------  /TEAM  -------------------------*/
+
+/* ======================== REGULAR-CUSTOMERS ===============*/
+.regular-customers {
+  background: var(--primary-bg-color);
+  margin: 0 auto 0 auto;
+}
+.page-regular-customers {
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 94px;
+}
+.regular-customers-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin: 94px 0 50px 0;
+}
+.regular-customers-icon {
+  width: 106px;
+  height: 60px;
+}
+.regular-customers-icon-bg {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ======================== /REGULAR-CUSTOMERS ===============*/
 
 /*-------------------------  FOOTER STUDIO  -------------------------*/
 
@@ -300,12 +399,14 @@ ol {
   margin-top: 20px;
 }
 .maps-footer {
-  margin-bottom: 9px;
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
+}
+.maps-studio {
+  margin-bottom: 9px;
 }
 .mailinfo-footer {
   font-style: normal;
@@ -313,6 +414,8 @@ ol {
   font-size: 14px;
   line-height: 1.71;
   color: var(--contact-footer-color);
+}
+.mail-studio {
   margin-bottom: 9px;
 }
 .telinfo-footer {
@@ -399,12 +502,12 @@ ol {
 }
 /* ==========================/PORTFOLIO HEADER =========================*/
 /* =========================== PORTFOLIO BUTTON ======================== */
-.portfolio {
+.page-potfolio {
   padding: 94px 0 94px 0;
 }
 .portfolio-button {
   display: flex;
-  margin: 94px 0 50px 0;
+  margin-bottom: 50px;
   align-items: center;
   column-gap: 8px;
   justify-content: center;
@@ -439,7 +542,6 @@ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
 }
 .portfolio-box {
   box-sizing: border-box;
@@ -499,11 +601,17 @@ ol {
   color: var(--primary-text-color);
   margin-bottom: 9px;
 }
+.portfolio-map {
+  margin-bottom: 9px;
+}
 .portfolio-footer-mail {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--contact-footer-color);
+  margin-bottom: 9px;
+}
+.footer-mail {
   margin-bottom: 9px;
 }
 .portfolio-footer-tel {
