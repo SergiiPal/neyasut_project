@@ -25,6 +25,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 h1,
 h2,
 h3,
@@ -33,6 +34,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .link {
   text-decoration: none;
 }
@@ -53,6 +55,7 @@ ol {
   align-items: center;
   justify-content: space-between;
 }
+
 .header {
   background: var(--primary-bg-color);
   padding-top: 24px;
@@ -128,7 +131,13 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.mail-info:hover,
+.mail-logo-info:hover .mail-logo,
+.mail-logo-info:focus .mail-logo {
+  fill: #2196f3;
+}
+.mail-logo-info:hover .mail-info {
+  color: var(--accent-color);
+}
 .mail-info:focus {
   color: var(--accent-color);
 }
@@ -137,9 +146,7 @@ ol {
   height: 16px;
   margin-right: 10px;
 }
-/* .tel-logo:hover {
-  color: #2196f3;
-} */
+
 .tel-info {
   color: var(--tertiary-text-color);
   text-decoration: none;
@@ -148,7 +155,15 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.tel-info:hover,
+.tel-logo-info:hover .tel-logo,
+.tel-logo-info:focus .tel-logo {
+  fill: #2196f3;
+}
+.tel-logo-info:hover .tel-info,
+.tel-logo-info:focus .tel-info {
+  color: var(--accent-color);
+}
+
 .tel-info:focus {
   color: var(--accent-color);
 }
@@ -290,6 +305,17 @@ ol {
 .social-icon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
+}
+
+.social-link:hover .social-icon,
+.social-focus:focus .social-link .social-icon {
+  fill: var(--primary-bg-color);
+}
+
+.social-link:hover,
+.social-focus:focus .social-link {
+  background: var(--button-background-hover);
 }
 .team-list .team-member {
   background: var(--primary-bg-color);
@@ -322,14 +348,7 @@ ol {
   width: 44px;
   height: 44px;
 }
-/* .social-icon:hover {
-  color: var(--primary-text-color: #ffffff;);
-} */
-.social-link:hover,
-.social-link:focus {
-  background: var(--button-background-hover);
-  color: var(--primary-text-color);
-}
+
 /*-------------------------  /TEAM  -------------------------*/
 
 /* ======================== REGULAR-CUSTOMERS ===============*/
@@ -356,6 +375,11 @@ ol {
 .regular-customers-icon {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
+}
+.regular-customers-icon-bg:hover .regular-customers-icon,
+.icon-focus:focus .regular-customers-icon-bg .regular-customers-icon {
+  fill: #2196f3;
 }
 .regular-customers-icon-bg {
   border: 1px solid #afb1b8;
@@ -368,9 +392,9 @@ ol {
 }
 /* ======================== /REGULAR-CUSTOMERS ===============*/
 
-/*-------------------------  FOOTER STUDIO  -------------------------*/
+/*-------------------------  FOOTER STUDIO - PORTFOLIO  -------------------------*/
 
-.footer-studio {
+.footer-studio-portfolio {
   padding: 60px 0px 60px 0px;
   background: var(--secondary-bg-color-dark);
   text-decoration: none;
@@ -395,7 +419,7 @@ ol {
 .footercontact a:focus {
   color: var(--accent-color);
 }
-.contact-studio {
+.contact-studio-portfolio {
   margin-top: 20px;
 }
 .maps-footer {
@@ -405,7 +429,7 @@ ol {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
-.maps-studio {
+.maps-studio-portfolio {
   margin-bottom: 9px;
 }
 .mailinfo-footer {
@@ -415,7 +439,7 @@ ol {
   line-height: 1.71;
   color: var(--contact-footer-color);
 }
-.mail-studio {
+.mail-studio-portfolio {
   margin-bottom: 9px;
 }
 .telinfo-footer {
@@ -425,11 +449,68 @@ ol {
   line-height: 1.71;
   color: var(--contact-footer-color);
 }
-/*-------------------------  /FOOTER STUDIO  -------------------------*/
+.footer-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 20px 0;
+}
+
+.footer-social-icon-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover .footer-social-icon,
+.footer-social-focus:focus .footer-social-link .footer-social-icon {
+  fill: var(--primary-bg-color);
+}
+
+.footer-social-link:hover,
+.footer-social-focus:focus .footer-social-link {
+  background: var(--button-background-hover);
+}
+.cont-footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 13px;
+  margin-left: 70px;
+}
+.container-list {
+  display: flex;
+}
+/* ======================= / FOOTER STUDIO - PORTFOLIO==================== */
 
 /*-------------------------  PORTFOLIO HEADER  -------------------------*/
 
 .page-portfolio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cont-portfolio {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -485,8 +566,8 @@ ol {
 }
 .potfolio-contacts {
   display: flex;
-  justify-content: space-between;
   column-gap: 30px;
+  justify-content: flex-end;
 }
 .potfolio-contacts a {
   font-weight: 500;
@@ -494,7 +575,6 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--tertiary-text-color);
-  padding: 32px 0 32px 0;
 }
 .potfolio-contacts a:hover,
 .potfolio-contacts a:focus {
@@ -547,6 +627,10 @@ ol {
   box-sizing: border-box;
   border: 1px solid #eeeeee;
 }
+.portfolio-box:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-img .portfolio-chapter {
   font-weight: 700;
   font-size: 18px;
@@ -564,60 +648,3 @@ ol {
   margin-top: 4px;
 }
 /* =========================== /PORTFOLIO IMAGES =========================*/
-/* ============================ PORTFOLIO FOOTER ========================= */
-.portfolio-address a:hover,
-.portfolio-address a:focus {
-  color: var(--accent-color);
-}
-.portfolio-footer {
-  background: var(--secondary-bg-color-dark);
-  margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  width: 1630px;
-}
-.footer-logo-element {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
-}
-
-.footer-logo-portfolio {
-  font-family: var(--secondary-font);
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-.portfolio-address {
-  margin-top: 20px;
-}
-.portfolio-footer-map {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--primary-text-color);
-  margin-bottom: 9px;
-}
-.portfolio-map {
-  margin-bottom: 9px;
-}
-.portfolio-footer-mail {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--contact-footer-color);
-  margin-bottom: 9px;
-}
-.footer-mail {
-  margin-bottom: 9px;
-}
-.portfolio-footer-tel {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--contact-footer-color);
-}
-/* ============================ /PORTFOLIO FOOTER ========================= */

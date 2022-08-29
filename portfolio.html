@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="portfolio-header">
-      <div class="page-portfolio-header container">
+      <div class="container page-portfolio-header cont-portfolio ">
       <nav class="portfolio-nav">
         <a href="./index.html" class="link portfolio-logo"><span class="portfolio-logo-element">Web</span>Studio</a>
         <ul class="portfolio-navigation">
@@ -23,11 +23,23 @@
           <li><a href="" class="link">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="potfolio-contacts">
-        <li> 
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com </a>
+      <ul class="potfolio-contacts  ">
+        <li>
+          <div class="mail-logo-info">
+          <svg class="mail-logo">
+            <use href="./img/sprite.svg#icon-envelope"></use>
+          </svg>
+          <a href="mailto:info@devstudio.com" class="mail-info">info@devstudio.com</a>
+        </div>
         </li>
-        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <div class="tel-logo-info">
+          <svg class="tel-logo">
+            <use href="./img/sprite.svg#icon-smartphone"></use>
+          </svg>
+          <a href="tel:+380961111111" class="tel-info">+38 096 111 11 11</a>
+        </div>
+        </li>
       </ul>
     </div>
     </header>
@@ -173,27 +185,71 @@
       </div>
       </section>
     </main>
-    <footer class="portfolio-footer">
-      <div class="port-footer container">
-      <a  href="" class="link footer-logo-portfolio"><span class="footer-logo-element">Web</span>Studio</a>
-      <address class="portfolio-address">
-        <ul>
-          <li class="portfolio-map">
-            <a
-              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-              class="link portfolio-footer-map"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li class="footer-mail">
-            <a href="mailto:info@example.com" class="link portfolio-footer-mail">info@example.com</a>
-          </li>
-          <li><a href="tel:+380991111111" class="link portfolio-footer-tel">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
-    </div>
+    <footer class="footer-studio-portfolio">
+      <div class="container container-list">
+        <div>
+          <a class="footer-logo" href=""><span class="logo-web">Web</span>Studio</a>
+          <address class="contact-studio-portfolio">
+              <ul class="footercontact">
+                <li class="maps-studio-portfolio">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="maps-footer"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li id="contact" class="mail-studio-portfolio">
+                  <a href="mailto:info@example.com" class="mailinfo-footer">info@example.com</a>
+                </li>
+                <li><a href="tel:+380991111111" class="telinfo-footer">+38 099 111 11 11</a></li>
+              </ul>
+          </address>
+        </div>
+        <div class="cont-footer-social">
+          <h3 class="footer-title">приєднуйтесь</h3>
+          <div class="footer-social-list" >
+            <ul class="footer-social-icon-list">
+              <li>
+                <a class="footer-social-focus" href="https://www.instagram.com/">
+                  <div class="footer-social-link">
+                  <svg class="footer-social-icon">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+                </a>
+              </li>
+              <li>
+                <a class="footer-social-focus" href="https://twitter.com/">
+                  <div class="footer-social-link">
+                  <svg class="footer-social-icon">
+                    <use href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+                </a>
+              </li>
+              <li>
+                <a class="footer-social-focus" href="https://www.facebook.com/">
+                  <div class="footer-social-link">
+                  <svg class="footer-social-icon">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+                </a>
+              </li>
+              <li>
+                <a class="footer-social-focus" href="https://www.linkedin.com/">
+                  <div class="footer-social-link">
+                  <svg class="footer-social-icon">
+                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
