@@ -121,6 +121,7 @@ ol {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: #757575;
 }
 
 .mail-info {
@@ -145,6 +146,7 @@ ol {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: #757575;
 }
 
 .tel-info {
@@ -178,8 +180,6 @@ ol {
     ),
     url(../img/bg.jpg);
   background-size: cover;
-  width: 1630px;
-  height: 600px;
   padding: 200px 0 200px 0;
   margin: 0 auto 0 auto;
 }
@@ -285,8 +285,6 @@ ol {
 }
 .team {
   background: var(--secondary-bg-color);
-  width: 1630px;
-  height: 648px;
   padding: 94px 0 94px 0;
   margin: 0 auto;
 }
@@ -381,6 +379,10 @@ ol {
 .icon-focus:focus .regular-customers-icon-bg .regular-customers-icon {
   fill: #2196f3;
 }
+.regular-customers-icon-bg:hover,
+.regular-customers-icon-bg:focus {
+  border-color: #2196f3;
+}
 .regular-customers-icon-bg {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -390,6 +392,7 @@ ol {
   align-items: center;
   justify-content: center;
 }
+
 /* ======================== /REGULAR-CUSTOMERS ===============*/
 
 /*-------------------------  FOOTER STUDIO - PORTFOLIO  -------------------------*/
@@ -398,7 +401,6 @@ ol {
   padding: 60px 0px 60px 0px;
   background: var(--secondary-bg-color-dark);
   text-decoration: none;
-  width: 1630px;
   margin: 0 auto;
 }
 .logo-web {
@@ -519,7 +521,6 @@ ol {
   background: var(--primary-bg-color);
   padding: 24px 0 25px 0;
   border-bottom: 1px solid #ececec;
-  width: 1630px;
   margin: 0 auto;
 }
 .portfolio-logo-element {
