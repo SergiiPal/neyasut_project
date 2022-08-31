@@ -8,9 +8,11 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --secondary-bg-color-dark: #2f303a;
+  --primary-icon-color: #afb1b8;
   --logo-dark: #000000;
   --button-background: #2196f3;
   --button-background-hover: #188ce8;
+  --link-background-hover: #188ce8;
   --contact-footer-color: rgba(255, 255, 255, 0.6);
 }
 body {
@@ -19,7 +21,7 @@ body {
   color: var(--tertiary-text-color);
 }
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -121,32 +123,26 @@ ol {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: #757575;
 }
 
 .mail-info {
   color: var(--tertiary-text-color);
-  font-weight: 500;
   text-decoration: none;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  fill: currentColor;
 }
-.mail-logo-info:hover .mail-logo,
-.mail-logo-info:focus .mail-logo {
-  fill: #2196f3;
-}
-.mail-logo-info:hover .mail-info {
-  color: var(--accent-color);
-}
+.mail-info:hover,
 .mail-info:focus {
   color: var(--accent-color);
 }
+
 .tel-logo {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: #757575;
 }
 
 .tel-info {
@@ -156,19 +152,13 @@ ol {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  fill: currentColor;
 }
-.tel-logo-info:hover .tel-logo,
-.tel-logo-info:focus .tel-logo {
-  fill: #2196f3;
-}
-.tel-logo-info:hover .tel-info,
-.tel-logo-info:focus .tel-info {
-  color: var(--accent-color);
-}
-
+.tel-info:hover,
 .tel-info:focus {
   color: var(--accent-color);
 }
+
 /*-------------------------  /HEADER  ------------------------*/
 
 /*-------------------------  TITLE  -------------------------*/
@@ -297,23 +287,26 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 16px;
+  margin-top: 16px;
   column-gap: 10px;
 }
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
 }
-
-.social-link:hover .social-icon,
-.social-focus:focus .social-link .social-icon {
-  fill: var(--primary-bg-color);
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-icon-color);
 }
-
 .social-link:hover,
-.social-focus:focus .social-link {
+.social-link:focus {
   background: var(--button-background-hover);
+  fill: var(--primary-text-color);
 }
 .team-list .team-member {
   background: var(--primary-bg-color);
@@ -338,14 +331,6 @@ ol {
   text-align: center;
   color: var(--tertiary-text-color);
 }
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-}
 
 /*-------------------------  /TEAM  -------------------------*/
 
@@ -353,11 +338,11 @@ ol {
 .regular-customers {
   background: var(--primary-bg-color);
   margin: 0 auto 0 auto;
+  padding: 94px 0 94px 0;
 }
 .page-regular-customers {
   display: flex;
   column-gap: 30px;
-  margin-bottom: 94px;
 }
 .regular-customers-title {
   font-family: "Roboto";
@@ -368,21 +353,15 @@ ol {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin: 94px 0 50px 0;
+  margin-bottom: 50px;
 }
-.regular-customers-icon {
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
-}
-.regular-customers-icon-bg:hover .regular-customers-icon,
-.icon-focus:focus .regular-customers-icon-bg .regular-customers-icon {
-  fill: #2196f3;
-}
+
 .regular-customers-icon-bg:hover,
 .regular-customers-icon-bg:focus {
-  border-color: #2196f3;
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
+
 .regular-customers-icon-bg {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -391,6 +370,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--primary-icon-color);
 }
 
 /* ======================== /REGULAR-CUSTOMERS ===============*/
@@ -462,7 +442,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0 20px 0;
+  margin-bottom: 20px;
 }
 
 .footer-social-icon-list {
@@ -473,7 +453,6 @@ ol {
 .footer-social-icon {
   width: 20px;
   height: 20px;
-  fill: #fff;
 }
 .footer-social-link {
   display: flex;
@@ -483,25 +462,22 @@ ol {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
-}
-.footer-social-link:hover .footer-social-icon,
-.footer-social-focus:focus .footer-social-link .footer-social-icon {
-  fill: var(--primary-bg-color);
+  fill: var(--primary-text-color);
 }
 
 .footer-social-link:hover,
-.footer-social-focus:focus .footer-social-link {
+.footer-social-link:focus {
   background: var(--button-background-hover);
 }
 .cont-footer-social {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 13px;
   margin-left: 70px;
 }
 .container-list {
   display: flex;
+  align-items: baseline;
 }
 /* ======================= / FOOTER STUDIO - PORTFOLIO==================== */
 
@@ -619,16 +595,18 @@ ol {
 .chapter-group {
   padding: 20px 24px;
 }
+
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 .portfolio-box {
-  box-sizing: border-box;
   border: 1px solid #eeeeee;
+  display: block;
 }
-.portfolio-box:hover {
+.portfolio-box:hover,
+.portfolio-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
