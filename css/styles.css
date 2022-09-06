@@ -22,6 +22,13 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--tertiary-text-color);
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
 .container {
   width: 1230px;
   margin-left: auto;
@@ -29,19 +36,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-h1,
-h2,
-h3,
-h4,
-.p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
 .link {
   text-decoration: none;
 }
@@ -297,8 +291,8 @@ ol {
 }
 .overley-resume {
   position: absolute;
-  font-family: "Roboto";
-  font-style: normal;
+  left: 0;
+  bottom: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -307,12 +301,12 @@ ol {
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
-  width: 370px;
+  width: 100%;
   height: 70px;
   align-items: center;
   justify-content: center;
   display: flex;
-  margin-top: 224px;
+  margin: 0;
 }
 /*-------------------------  /VISUALLY  -------------------------*/
 
@@ -424,7 +418,7 @@ ol {
   align-items: center;
   justify-content: center;
   fill: var(--primary-icon-color);
-  transition: background-color var(--transition-timing-function),
+  transition: border-color var(--transition-timing-function),
     fill var(--transition-timing-function);
 }
 
@@ -654,7 +648,8 @@ ol {
   border: none;
   border-radius: 4px;
   transition: color var(--transition-timing-function),
-    background-color var(--transition-timing-function);
+    background-color var(--transition-timing-function),
+    box-shadow var(--transition-timing-function);
 }
 /* =========================== /PORTFOLIO BUTTON ======================== */
 /* =========================== PORTFOLIO IMAGES =========================*/
