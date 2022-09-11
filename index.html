@@ -431,6 +431,29 @@
             </ul>
           </div>
         </div>
+        <form>
+          <p class="footer-form-text">підпишіться на розсилку</p>
+          <label class="footer-form-field">
+            <span class="footer-form-input-wrapper">
+              <input
+                type="email"
+                class="footer-form-input"
+                required
+                pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </span>
+          </label>
+          <span class="footer-button-icon">
+            <button type="submit" class="footer-form-submit">
+              Підписатися
+            </button>
+            <svg class="footer-icon-send">
+              <use href="./img/sprite.svg#icon-send"></use>
+            </svg>
+          </span>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
