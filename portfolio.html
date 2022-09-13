@@ -291,10 +291,10 @@
             </ul>
           </div>
         </div>
-        <form>
+        <div class="footer-form">
           <p class="footer-form-text">підпишіться на розсилку</p>
-          <label class="footer-form-field">
-            <span class="footer-form-input-wrapper">
+          <form class="footer-send-form">
+            <label class="footer-form-field">
               <input
                 type="email"
                 class="footer-form-input"
@@ -303,18 +303,16 @@
                 name="user-email"
                 placeholder="E-mail"
               />
-            </span>
-          </label>
-          <span class="footer-button-icon">
+            </label>
             <button type="submit" class="footer-form-submit">
               Підписатися
+              <svg class="footer-icon-send">
+                <use href="./img/sprite.svg#icon-send"></use>
+              </svg>
             </button>
-            <svg class="footer-icon-send">
-              <use href="./img/sprite.svg#icon-send"></use>
-            </svg>
-          </span>
-        </form>
-      </div>
+          </form>
+        </div>
+        </div>
     </footer>
   </body>
 </html>

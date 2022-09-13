@@ -431,29 +431,27 @@
             </ul>
           </div>
         </div>
-        <form>
-          <p class="footer-form-text">підпишіться на розсилку</p>
+        <div class="footer-form">
+        <p class="footer-form-text">підпишіться на розсилку</p>
+        <form class="footer-send-form">
           <label class="footer-form-field">
-            <span class="footer-form-input-wrapper">
-              <input
-                type="email"
-                class="footer-form-input"
-                required
-                pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
-                name="user-email"
-                placeholder="E-mail"
-              />
-            </span>
+            <input
+              type="email"
+              class="footer-form-input"
+              required
+              pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
+              name="user-email"
+              placeholder="E-mail"
+            />
           </label>
-          <span class="footer-button-icon">
-            <button type="submit" class="footer-form-submit">
-              Підписатися
-            </button>
+          <button type="submit" class="footer-form-submit">
+            Підписатися
             <svg class="footer-icon-send">
               <use href="./img/sprite.svg#icon-send"></use>
             </svg>
-          </span>
+          </button>
         </form>
+      </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -482,8 +480,9 @@
               </span>
             </span>
           </label>
-          <span class="modal-form-field-description">Телефон</span>
+
           <label class="modal-form-field">
+            <span class="modal-form-field-description">Телефон</span>
             <span class="modal-form-input-wrapper">
               <input
                 type="tel"
