@@ -1,0 +1,40 @@
+
+// FOOTER CONTACTS (PAGE STUDIO-PORTFOLIO)
+
+.footercontact a:hover,
+.footercontact a:focus {
+  color: var(--accent-color);
+}
+.contact-studio-portfolio {
+  margin-top: 20px;
+}
+.maps-footer {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+  transition: color var(--transition-timing-function);
+}
+.maps-studio-portfolio {
+  margin-bottom: 9px;
+}
+.mailinfo-footer {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--contact-footer-color);
+  transition: color var(--transition-timing-function);
+}
+.mail-studio-portfolio {
+  margin-bottom: 9px;
+}
+.telinfo-footer {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--contact-footer-color);
+  transition: color var(--transition-timing-function);
+}

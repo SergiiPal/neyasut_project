@@ -1,0 +1,39 @@
+.regular-customers {
+    background: var(--primary-bg-color);
+    margin: 0 auto 0 auto;
+    padding: 94px 0 94px 0;
+  }
+  .page-regular-customers {
+    display: flex;
+    column-gap: 30px;
+  }
+  .regular-customers-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+  }
+  
+  .regular-customers-icon-bg:hover,
+  .regular-customers-icon-bg:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  
+  .regular-customers-icon-bg {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--primary-icon-color);
+    transition: border-color var(--transition-timing-function),
+      fill var(--transition-timing-function);
+  }

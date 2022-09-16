@@ -1,0 +1,43 @@
+.modal-close-btn {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+  .btn-close:hover,
+  .btn-close:focus {
+    fill: #2196f3;
+    transition: var(--transition-timing-function);
+  }
+ 
+  .modal-form-submit {
+    margin: 0 auto 0 auto;
+    display: block;
+    width: 216px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    background-color: var(--button-background);
+    color: var(--primary-text-color);
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    transition: background-color var(--transition-timing-function);
+  }
+  .modal-form-submit:hover,
+  .modal-form-submit:focus {
+    background: var(--button-background-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
