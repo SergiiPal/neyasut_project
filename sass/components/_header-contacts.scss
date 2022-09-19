@@ -3,13 +3,13 @@
   column-gap: 50px;
   display: flex;
 }
-.mail-logo {
+.mail__logo {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 
-.mail-info {
+.mail__info {
   color: var(--tertiary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -20,19 +20,19 @@
   display: flex;
   align-items: center;
   transition: color var(--transition-timing-function);
-}
-.mail-info:hover,
-.mail-info:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.tel-logo {
+.tel__logo {
   width: 10px;
   height: 16px;
   margin-right: 10px;
 }
 
-.tel-info {
+.tel__info {
   color: var(--tertiary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -43,10 +43,10 @@
   display: flex;
   align-items: center;
   transition: color var(--transition-timing-function);
-}
-.tel-info:hover,
-.tel-info:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 //   PAGE-PORTFOLIO
 .contact-logo-mail {
@@ -58,16 +58,16 @@
   display: flex;
   column-gap: 30px;
   justify-content: flex-end;
-}
-.potfolio-contacts a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--tertiary-text-color);
-  transition: color var(--transition-timing-function);
-}
-.potfolio-contacts a:hover,
-.potfolio-contacts a:focus {
-  color: var(--accent-color);
+  & .mail-tel-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--tertiary-text-color);
+    transition: color var(--transition-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 }
