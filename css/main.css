@@ -1004,7 +1004,7 @@ body {
   transform: translateY(100%);
   transition: var(--transition-timing-function-overley);
 }
-.portfolio-box:hover .overley, .portfolio-box:focus .overley {
+.portfolio-img__box:hover .overley, .portfolio-img__box:focus .overley {
   transform: translateY(0%);
 }
 

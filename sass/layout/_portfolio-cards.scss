@@ -49,8 +49,8 @@
   overflow: auto;
   transform: translateY(100%);
   transition: var(--transition-timing-function-overley);
-  .portfolio-box:hover &,
-  .portfolio-box:focus & {
+  .portfolio-img__box:hover &,
+  .portfolio-img__box:focus & {
     transform: translateY(0%);
   }
 }
