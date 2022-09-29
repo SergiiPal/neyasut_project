@@ -1,14 +1,5 @@
 // PAGE_STUDIO
-// .page-header__container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
 
-// .header {
-//   background: var(--primary-bg-color);
-//   border-bottom: 1px solid #ececec;
-// }
 @media screen and (max-width: 767px) {
   .navilink {
     display: none;
@@ -30,16 +21,169 @@
   .open-mobile-menu-btn__icon {
     width: 24px;
     height: 16px;
-    &:hover,
-    &:focus {
+    &:active {
       fill: var(--button-background-hover);
     }
   }
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    background: var(--primary-bg-color);
+    border-bottom: 1px solid #ececec;
+  }
   .open-mobile-menu-btn {
     display: none;
+  }
+  .nav-studio {
+    display: flex;
+    align-items: center;
+  }
+
+  .navilink {
+    display: flex;
+    column-gap: 50px;
+    & .menu-item__link {
+      color: var(--secondary-text-color);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+        transition: color var(--transition-timing-function);
+      }
+      &.current {
+        color: var(--accent-color);
+      }
+    }
+  }
+  .menu__item {
+    position: relative;
+    padding: 32px 0 28px 0;
+  }
+  .navi-line::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    background-color: var(--button-background);
+    border-radius: 2px;
+  }
+  .tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .studio-contact-header {
+    padding-top: 21px;
+  }
+  .studio-contact__header-item {
+    padding-bottom: 10px;
+  }
+  .mail__info {
+    color: var(--tertiary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    fill: currentColor;
+    transition: color var(--transition-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .mail__logo {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+  .tel__info {
+    color: var(--tertiary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    fill: currentColor;
+    transition: color var(--transition-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .tel__logo {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-studio {
+    display: flex;
+    align-items: center;
+  }
+  .header {
+    background: var(--primary-bg-color);
+    border-bottom: 1px solid #ececec;
+  }
+  .navilink {
+    display: flex;
+    column-gap: 50px;
+    & .menu-item__link {
+      color: var(--secondary-text-color);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+        transition: color var(--transition-timing-function);
+      }
+      &.current {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  .menu__item {
+    position: relative;
+    padding: 32px 0 28px 0;
+  }
+  .navi-line::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    background-color: var(--button-background);
+    border-radius: 2px;
+  }
+  .header {
+    background: var(--primary-bg-color);
+    border-bottom: 1px solid #ececec;
+  }
+  .studio-contact-header {
+    column-gap: 50px;
+    display: flex;
+  }
+  .mail__logo {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
   }
 
   .mail__info {
@@ -58,6 +202,13 @@
       color: var(--accent-color);
     }
   }
+
+  .tel__logo {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+
   .tel__info {
     color: var(--tertiary-text-color);
     text-decoration: none;
@@ -73,14 +224,6 @@
     &:focus {
       color: var(--accent-color);
     }
-  }
-}
-@media screen and (max-width: 1200px) {
-  .mail__logo {
-    display: none;
-  }
-  .tel__logo {
-    display: none;
   }
 }
 
