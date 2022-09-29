@@ -1,69 +1,70 @@
 // PAGE-STUDIO
-.nav-studio {
-  display: flex;
-  align-items: center;
-}
+// .nav-studio {
+//   display: flex;
+//   align-items: center;
+// }
 
-.navilink {
-  display: flex;
-  column-gap: 50px;
-  & .menu-item__link {
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-      transition: color var(--transition-timing-function);
-    }
-    &.current {
-      color: var(--accent-color);
-    }
-  }
-}
+// .navilink {
+//   display: flex;
+//   column-gap: 50px;
+//   & .menu-item__link {
+//     color: var(--secondary-text-color);
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     &:hover,
+//     &:focus {
+//       color: var(--accent-color);
+//       transition: color var(--transition-timing-function);
+//     }
+//     &.current {
+//       color: var(--accent-color);
+//     }
+//   }
+// }
 
-.menu__item {
-  position: relative;
-  padding: 32px 0 28px 0;
-}
-.navi-line::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px;
-  background-color: var(--button-background);
-  border-radius: 2px;
-}
+// .menu__item {
+//   position: relative;
+//   padding: 32px 0 28px 0;
+// }
+// .navi-line::after {
+//   position: absolute;
+//   content: "";
+//   display: block;
+//   width: 100%;
+//   height: 4px;
+//   left: 0;
+//   bottom: -1px;
+//   background-color: var(--button-background);
+//   border-radius: 2px;
+// }
+
 //    PAGE-PORTFOLIO
-.portfolio-nav {
-  display: flex;
-  align-items: center;
-}
-.line-link {
-  position: relative;
-  padding: 32px 0 28px 0;
-}
-.portfolio-navigation {
-  display: flex;
-  column-gap: 50px;
-  & .portfolio__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-    transition: color var(--transition-timing-function);
-    &.current {
-      color: var(--accent-color);
-    }
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
-  }
-}
+// .portfolio-nav {
+//   display: flex;
+//   align-items: center;
+// }
+// .line-link {
+//   position: relative;
+//   padding: 32px 0 28px 0;
+// }
+// .portfolio-navigation {
+//   display: flex;
+//   column-gap: 50px;
+//   & .portfolio__link {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--secondary-text-color);
+//     transition: color var(--transition-timing-function);
+//     &.current {
+//       color: var(--accent-color);
+//     }
+//     &:hover,
+//     &:focus {
+//       color: var(--accent-color);
+//     }
+//   }
+// }

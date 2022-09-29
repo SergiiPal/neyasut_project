@@ -1,14 +1,89 @@
 // PAGE_STUDIO
-.page-header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+// .page-header__container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .header {
+//   background: var(--primary-bg-color);
+//   border-bottom: 1px solid #ececec;
+// }
+@media screen and (max-width: 767px) {
+  .navilink {
+    display: none;
+  }
+  .studio-contact-header {
+    display: none;
+  }
+  .open-mobile-menu-btn {
+    border: none;
+    background-color: transparent;
+  }
+  .mobile-page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .open-mobile-menu-btn__icon {
+    width: 24px;
+    height: 16px;
+    &:hover,
+    &:focus {
+      fill: var(--button-background-hover);
+    }
+  }
 }
 
-.header {
-  background: var(--primary-bg-color);
-  border-bottom: 1px solid #ececec;
+@media screen and (min-width: 768px) {
+  .open-mobile-menu-btn {
+    display: none;
+  }
+
+  .mail__info {
+    color: var(--tertiary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .tel__info {
+    color: var(--tertiary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 }
+@media screen and (max-width: 1200px) {
+  .mail__logo {
+    display: none;
+  }
+  .tel__logo {
+    display: none;
+  }
+}
+
 //   PAGE-PORTFOLIO
 
 .page-portfolio-header {
