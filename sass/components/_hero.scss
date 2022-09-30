@@ -48,9 +48,15 @@
 
 @media screen and (max-width: 480px) {
   .title {
-    background-image: url("../img/header-tablet.img.jpg");
+    background: #c4c4c4;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../img/header-tablet.img.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .title-text {
     padding-top: 118px;
