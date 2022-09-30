@@ -45,40 +45,28 @@
 //     border-radius: 4px;
 //   }
 // }
-@media screen and (max-width: 767px) {
-}
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1200px) {
-  .title {
-    background: #c4c4c4;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/bg.jpg);
-    background-size: 1600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 200px 0 200px 0;
-    margin: 0 auto 0 auto;
-  }
 
+@media screen and (max-width: 480px) {
+  .title {
+    background-image: url("../img/header-tablet.img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .title-text {
-    width: 700px;
+    padding-top: 118px;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     color: var(--primary-text-color);
   }
   .button-studio {
     margin: 30px auto 0 auto;
     display: block;
-    width: 216px;
+    width: 200px;
     height: 50px;
     font-weight: 700;
     font-size: 16px;
