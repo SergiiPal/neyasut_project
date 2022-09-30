@@ -1240,45 +1240,51 @@ body {
     color: var(--tertiary-text-color);
   }
 }
-.resume-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--secondary-text-color);
+@media screen and (max-width: 1200px) {
+  .resume {
+    display: none;
+  }
+  .resume-title {
+    display: none;
+  }
 }
-
-.resume {
-  display: flex;
-  column-gap: 30px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .resume-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-text-color);
+  }
+  .resume {
+    display: flex;
+    column-gap: 30px;
+    padding-bottom: 94px;
+  }
+  .resume-box {
+    position: relative;
+  }
+  .overley__resume {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+  }
 }
-
-.resume-box {
-  position: relative;
-}
-
-.overley__resume {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 70px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: 0;
-}
-
 .team-title {
   font-weight: 700;
   font-size: 36px;
