@@ -1,13 +1,24 @@
-
 // FOOTER (PAGE STUDIO-PORTFOLIO)
-
+.footer-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 .footer-studio-portfolio {
-    padding: 60px 0px 60px 0px;
-    background: var(--secondary-bg-color-dark);
-    text-decoration: none;
-    margin: 0 auto;
-  }
-  .container-list {
-    display: flex;
-    align-items: baseline;
-  }
+  padding: 60px 0px 60px 0px;
+  background: var(--secondary-bg-color-dark);
+  text-decoration: none;
+  margin: 0 auto;
+}
+.container-list {
+  display: flex;
+  align-items: baseline;
+}
