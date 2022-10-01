@@ -1,39 +1,131 @@
 // FOOTER CONTACTS (PAGE STUDIO-PORTFOLIO)
 
-.footercontact a:hover,
-.footercontact a:focus {
-  color: var(--accent-color);
+@media screen and (max-width: 767px) {
+  .contact__block {
+    margin-bottom: 60px;
+  }
+  .footercontact a:hover,
+  .footercontact a:focus {
+    color: var(--accent-color);
+  }
+  .contact-studio-portfolio {
+    margin-top: 20px;
+  }
+  .footercontact__maps {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+    transition: color var(--transition-timing-function);
+  }
+  .maps-studio-portfolio {
+    margin-bottom: 9px;
+  }
+  .footercontact__mail {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--contact-footer-color);
+    transition: color var(--transition-timing-function);
+  }
+  .mail-studio-portfolio {
+    margin-bottom: 9px;
+  }
+  .footercontact__tel {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--contact-footer-color);
+    transition: color var(--transition-timing-function);
+  }
 }
-.contact-studio-portfolio {
-  margin-top: 20px;
+@media screen and (min-width: 768px) {
+  .contact__block {
+    margin: 0 165px 60px 76px;
+  }
+  .footer__contact-adress {
+    margin: 0 165px 30px 76px;
+  }
+  .footercontact a:hover,
+  .footercontact a:focus {
+    color: var(--accent-color);
+  }
+  .contact-studio-portfolio {
+    margin-top: 20px;
+  }
+  .footercontact__maps {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+    transition: color var(--transition-timing-function);
+  }
+  .maps-studio-portfolio {
+    margin-bottom: 9px;
+  }
+  .footercontact__mail {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--contact-footer-color);
+    transition: color var(--transition-timing-function);
+  }
+  .mail-studio-portfolio {
+    margin-bottom: 9px;
+  }
+  .footercontact__tel {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--contact-footer-color);
+    transition: color var(--transition-timing-function);
+  }
 }
-.footercontact__maps {
-  font-style: normal;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--primary-text-color);
-  transition: color var(--transition-timing-function);
-}
-.maps-studio-portfolio {
-  margin-bottom: 9px;
-}
-.footercontact__mail {
-  font-style: normal;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--contact-footer-color);
-  transition: color var(--transition-timing-function);
-}
-.mail-studio-portfolio {
-  margin-bottom: 9px;
-}
-.footercontact__tel {
-  font-style: normal;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--contact-footer-color);
-  transition: color var(--transition-timing-function);
+@media screen and (min-width: 1200px) {
+  .contact__block {
+    margin: inherit;
+  }
+  .footercontact a:hover,
+  .footercontact a:focus {
+    color: var(--accent-color);
+  }
+  .contact-studio-portfolio {
+    margin-top: 20px;
+  }
+  .footercontact__maps {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+    transition: color var(--transition-timing-function);
+  }
+  .maps-studio-portfolio {
+    margin-bottom: 9px;
+  }
+  .footercontact__mail {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--contact-footer-color);
+    transition: color var(--transition-timing-function);
+  }
+  .mail-studio-portfolio {
+    margin-bottom: 9px;
+  }
+  .footercontact__tel {
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--contact-footer-color);
+    transition: color var(--transition-timing-function);
+  }
 }
