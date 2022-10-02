@@ -1,30 +1,100 @@
-.portfolio-button {
-  display: flex;
-  margin-bottom: 50px;
-  align-items: center;
-  column-gap: 8px;
-  justify-content: center;
-  & button {
-    background: var(--secondary-bg-color);
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    color: var(--secondary-text-color);
-    padding: 6px 22px 6px 22px;
-    border: none;
-    border-radius: 4px;
-    transition: color var(--transition-timing-function),
-      background-color var(--transition-timing-function),
-      box-shadow var(--transition-timing-function);
-    &:hover,
-    &:focus {
-      background-color: var(--button-background);
-      cursor: pointer;
-      color: var(--primary-text-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+@media screen and (max-width: 768px) {
+  .portfolio-button {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    & button {
+      background: var(--secondary-bg-color);
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: center;
+      color: var(--secondary-text-color);
+      padding: 6px 22px 6px 22px;
+      border: none;
+      border-radius: 4px;
+      transition: color var(--transition-timing-function),
+        background-color var(--transition-timing-function),
+        box-shadow var(--transition-timing-function);
+      &:hover,
+      &:focus {
+        background-color: var(--button-background);
+        cursor: pointer;
+        color: var(--primary-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+          0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+  .mobile-last-button {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: center;
+    & button {
+      background: var(--secondary-bg-color);
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: center;
+      color: var(--secondary-text-color);
+      padding: 6px 22px 6px 22px;
+      border: none;
+      border-radius: 4px;
+      transition: color var(--transition-timing-function),
+        background-color var(--transition-timing-function),
+        box-shadow var(--transition-timing-function);
+      &:hover,
+      &:focus {
+        background-color: var(--button-background);
+        cursor: pointer;
+        color: var(--primary-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+          0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-button {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: center;
+    & button {
+      background: var(--secondary-bg-color);
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: center;
+      color: var(--secondary-text-color);
+      padding: 6px 22px 6px 22px;
+      border: none;
+      border-radius: 4px;
+      transition: color var(--transition-timing-function),
+        background-color var(--transition-timing-function),
+        box-shadow var(--transition-timing-function);
+      &:hover,
+      &:focus {
+        background-color: var(--button-background);
+        cursor: pointer;
+        color: var(--primary-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+          0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      }
     }
   }
 }
