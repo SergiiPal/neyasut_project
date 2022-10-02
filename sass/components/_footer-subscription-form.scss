@@ -12,6 +12,9 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-send-form {

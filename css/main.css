@@ -64,6 +64,7 @@ body {
   letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
   color: var(--tertiary-text-color);
+  min-width: 480px;
 }
 
 .container {
@@ -266,7 +267,7 @@ body {
   .modal-form-submit {
     margin: 0 auto 0 auto;
     display: block;
-    width: 216px;
+    width: 200px;
     height: 50px;
     font-weight: 700;
     font-size: 16px;
@@ -1269,6 +1270,9 @@ body {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer-send-form {
     display: flex;
@@ -1501,8 +1505,8 @@ body {
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1594,8 +1598,8 @@ body {
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     padding: 12px 16px;
     color: var(--modal-ptimary-text-color);
@@ -1667,7 +1671,7 @@ body {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: var(--secondary-text-color);
     letter-spacing: 0.03em;
@@ -1729,8 +1733,8 @@ body {
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     padding: 12px 16px;
     color: var(--modal-ptimary-text-color);
@@ -1773,8 +1777,8 @@ body {
     align-items: center;
     display: flex;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -1783,8 +1787,8 @@ body {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196f3;
@@ -1865,7 +1869,7 @@ body {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     padding: 12px 16px;
     color: var(--modal-ptimary-text-color);
