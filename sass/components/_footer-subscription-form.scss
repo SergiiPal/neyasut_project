@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .footer-form {
-    margin-left: 93px;
+    margin-top: 60px;
   }
 
   .footer-form-text {
@@ -19,7 +19,9 @@
     align-items: center;
     flex-direction: column;
   }
-
+  .footer-form-field {
+    margin-bottom: 20px;
+  }
   .footer-form__input {
     background: var(--secondary-bg-color-dark);
     width: 450px;

@@ -3,6 +3,8 @@
 @media screen and (max-width: 767px) {
   .contact__block {
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footercontact a:hover,
   .footercontact a:focus {
@@ -32,6 +34,14 @@
   }
   .mail-studio-portfolio {
     margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tel-studio-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footercontact__tel {
     font-style: normal;
@@ -77,6 +87,14 @@
   }
   .mail-studio-portfolio {
     margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tel-studio-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .footercontact__tel {
     font-style: normal;
@@ -109,6 +127,7 @@
   .maps-studio-portfolio {
     margin-bottom: 9px;
   }
+
   .footercontact__mail {
     font-style: normal;
     text-decoration: none;
@@ -119,6 +138,10 @@
   }
   .mail-studio-portfolio {
     margin-bottom: 9px;
+    display: block;
+  }
+  .tel-studio-portfolio {
+    display: block;
   }
   .footercontact__tel {
     font-style: normal;
