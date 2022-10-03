@@ -2384,7 +2384,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .page-potfolio {
-    padding: 60px 0 60px 0;
+    padding: 60px 15px 60px 15px;
   }
   .chapter-group {
     padding: 20px 24px;
